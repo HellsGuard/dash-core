@@ -217,10 +217,10 @@
             this.label2.ForeColor = System.Drawing.Color.DimGray;
             this.label2.Location = new System.Drawing.Point(15, 150);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(330, 30);
+            this.label2.Size = new System.Drawing.Size(394, 30);
             this.label2.TabIndex = 9;
             this.label2.Text = "{filename} and {year} will be set automatically.\r\nYou need to set the project nam" +
-    "e and your website manually.";
+    "e and your website in the project settings.";
             // 
             // commentEditor
             // 
@@ -240,14 +240,13 @@
             this.commentEditor.AutoIndent = false;
             this.commentEditor.AutoIndentChars = false;
             this.commentEditor.AutoIndentExistingLines = false;
-            this.commentEditor.AutoScrollMinSize = new System.Drawing.Size(291, 28);
+            this.commentEditor.AutoScrollMinSize = new System.Drawing.Size(291, 56);
             this.commentEditor.BackBrush = null;
             this.commentEditor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.commentEditor.CharHeight = 14;
             this.commentEditor.CharWidth = 8;
             this.commentEditor.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.commentEditor.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.commentEditor.Font = new System.Drawing.Font("Courier New", 9.75F);
             this.commentEditor.HighlightFoldingIndicator = false;
             this.commentEditor.Hotkeys = resources.GetString("commentEditor.Hotkeys");
             this.commentEditor.IsReplaceMode = false;
@@ -258,7 +257,7 @@
             this.commentEditor.ServiceColors = ((FastColoredTextBoxNS.ServiceColors)(resources.GetObject("commentEditor.ServiceColors")));
             this.commentEditor.Size = new System.Drawing.Size(460, 95);
             this.commentEditor.TabIndex = 8;
-            this.commentEditor.Text = "// <project name> {filename}\r\n// Copyright (c) {year} <website>";
+            this.commentEditor.Text = "// <project name> {filename}\r\n// Copyright (c) {year} <website>\r\n\r\n";
             this.commentEditor.Zoom = 100;
             this.commentEditor.TextChanged += new System.EventHandler<FastColoredTextBoxNS.TextChangedEventArgs>(this.commentEditor_TextChanged);
             // 

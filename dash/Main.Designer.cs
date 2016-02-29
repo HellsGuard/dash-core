@@ -34,6 +34,7 @@
             this.newFileToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.openFileStripButton = new System.Windows.Forms.ToolStripButton();
             this.openFolderToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.openProjectToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.saveAllToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
@@ -124,6 +125,7 @@
             this.newFileToolStripButton,
             this.openFileStripButton,
             this.openFolderToolStripButton,
+            this.openProjectToolStripButton,
             this.saveToolStripButton,
             this.saveAllToolStripButton,
             this.toolStripSeparator12,
@@ -168,6 +170,17 @@
             this.openFolderToolStripButton.Text = "toolStripButton1";
             this.openFolderToolStripButton.ToolTipText = "Open Folder (Ctrl+Shift+O)";
             this.openFolderToolStripButton.Click += new System.EventHandler(this.openFolderToolStripButton_Click);
+            // 
+            // openProjectToolStripButton
+            // 
+            this.openProjectToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.openProjectToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("openProjectToolStripButton.Image")));
+            this.openProjectToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.openProjectToolStripButton.Name = "openProjectToolStripButton";
+            this.openProjectToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.openProjectToolStripButton.Text = "toolStripButton1";
+            this.openProjectToolStripButton.ToolTipText = "Open Dash Project";
+            this.openProjectToolStripButton.Click += new System.EventHandler(this.openProjectToolStripButton_Click);
             // 
             // saveToolStripButton
             // 
@@ -338,10 +351,11 @@
             // 
             // openDashProjectToolStripMenuItem
             // 
-            this.openDashProjectToolStripMenuItem.Enabled = false;
+            this.openDashProjectToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openDashProjectToolStripMenuItem.Image")));
             this.openDashProjectToolStripMenuItem.Name = "openDashProjectToolStripMenuItem";
             this.openDashProjectToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.openDashProjectToolStripMenuItem.Text = "Dash Project";
+            this.openDashProjectToolStripMenuItem.Click += new System.EventHandler(this.openDashProjectToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
@@ -531,10 +545,10 @@
             // 
             // projectSettingsToolStripMenuItem
             // 
-            this.projectSettingsToolStripMenuItem.Enabled = false;
             this.projectSettingsToolStripMenuItem.Name = "projectSettingsToolStripMenuItem";
             this.projectSettingsToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.projectSettingsToolStripMenuItem.Text = "Project Settings";
+            this.projectSettingsToolStripMenuItem.Click += new System.EventHandler(this.projectSettingsToolStripMenuItem_Click);
             // 
             // compileToolStripMenuItem
             // 
@@ -718,7 +732,6 @@
             this.textArea.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textArea.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.textArea.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textArea.Font = new System.Drawing.Font("Courier New", 9.75F);
             this.textArea.Hotkeys = resources.GetString("textArea.Hotkeys");
             this.textArea.IsReplaceMode = false;
             this.textArea.LeftPadding = 15;
@@ -803,14 +816,14 @@
             this.toolStripSeparator13,
             this.closeAllButThisTabBarContextMenuItem});
             this.tabBarContextMenu.Name = "tabBarContextMenu";
-            this.tabBarContextMenu.Size = new System.Drawing.Size(172, 76);
+            this.tabBarContextMenu.Size = new System.Drawing.Size(171, 76);
             // 
             // saveTabBarContextStripItem
             // 
             this.saveTabBarContextStripItem.Image = ((System.Drawing.Image)(resources.GetObject("saveTabBarContextStripItem.Image")));
             this.saveTabBarContextStripItem.Name = "saveTabBarContextStripItem";
             this.saveTabBarContextStripItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveTabBarContextStripItem.Size = new System.Drawing.Size(171, 22);
+            this.saveTabBarContextStripItem.Size = new System.Drawing.Size(170, 22);
             this.saveTabBarContextStripItem.Text = "Save File";
             this.saveTabBarContextStripItem.Click += new System.EventHandler(this.saveTabBarContextStripItem_Click);
             // 
@@ -818,20 +831,20 @@
             // 
             this.closeTabBarContextMenuItem.Name = "closeTabBarContextMenuItem";
             this.closeTabBarContextMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.W)));
-            this.closeTabBarContextMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.closeTabBarContextMenuItem.Size = new System.Drawing.Size(170, 22);
             this.closeTabBarContextMenuItem.Text = "Close Tab";
             this.closeTabBarContextMenuItem.Click += new System.EventHandler(this.closeTabBarContextMenuItem_Click);
             // 
             // toolStripSeparator13
             // 
             this.toolStripSeparator13.Name = "toolStripSeparator13";
-            this.toolStripSeparator13.Size = new System.Drawing.Size(168, 6);
+            this.toolStripSeparator13.Size = new System.Drawing.Size(167, 6);
             // 
             // closeAllButThisTabBarContextMenuItem
             // 
             this.closeAllButThisTabBarContextMenuItem.Enabled = false;
             this.closeAllButThisTabBarContextMenuItem.Name = "closeAllButThisTabBarContextMenuItem";
-            this.closeAllButThisTabBarContextMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.closeAllButThisTabBarContextMenuItem.Size = new System.Drawing.Size(170, 22);
             this.closeAllButThisTabBarContextMenuItem.Text = "Close All But This";
             this.closeAllButThisTabBarContextMenuItem.Click += new System.EventHandler(this.closeAllButThisTabBarContextMenuItem_Click);
             // 
@@ -955,6 +968,7 @@
         private System.Windows.Forms.ToolStripMenuItem logStackTraceToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator14;
         private System.Windows.Forms.ToolStripMenuItem sendFeedbackToolStripMenuItem;
+        private System.Windows.Forms.ToolStripButton openProjectToolStripButton;
     }
 }
 

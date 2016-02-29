@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Windows.Forms;
 using FastColoredTextBoxNS;
+using Dash.Properties;
 
 namespace Dash
 {

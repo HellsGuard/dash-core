@@ -66,5 +66,17 @@
     <Setting Name="AppName" Type="System.String" Scope="User">
       <Value Profile="(Default)">Dash v1.2</Value>
     </Setting>
+    <Setting Name="Project_Name" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Project_Path" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Project_Website" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Projects_Dir" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>

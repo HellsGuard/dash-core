@@ -733,6 +733,7 @@ namespace Dash
 
         private void openFolderToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.openFolderDialog.SelectedPath = Settings.Default.Projects_Dir;
             DialogResult result = openFolderDialog.ShowDialog();
 
             if (result == DialogResult.OK)
@@ -783,6 +784,21 @@ namespace Dash
 
         }
 
+        private void projectSettingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProjectSettingsForm projectSettings = new ProjectSettingsForm();
+            projectSettings.ShowDialog();
+        }
+
+        private void openDashProjectToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            openFolderToolStripMenuItem.PerformClick();
+        }
+
+        private void openProjectToolStripButton_Click(object sender, EventArgs e)
+        {
+            openFolderToolStripMenuItem.PerformClick();
+        }
     }
 
 
